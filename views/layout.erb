@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Social Media Template</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    
+    <div class="social_media_page">
+      <div class="social_wrapper">
+        <div class="column_area">
+          <h1>
+            Twitter
+          </h1>
+          <a name="innovation"></a>
+          <% @timeline.each do |tweet| %>
+            <div class="post_wrapper bg-twitter ">
+              <p>
+                <%= tweet.text  %>          
+              </p>
+            </div>
+            <div class="social_media_type twitter-icon ">
+              <div class="social_media_name">
+                rudickconcrete
+              </div>
+            </div>
+          <% end %>
+          </div>
+        <div class="column_area">
+          <h1>
+            Instagram
+          </h1>
+          <% @instagram.each do |instagram| %>
+
+            <div class="post_wrapper bg-twitter ">
+              <img src="<%= instagram.images.standard_resolution.url.to_s %>">
+            </div>
+          <div class="social_media_type instagram-icon ">
+            <div class="social_media_name">
+              Rudick Concrete
+            </div>
+          </div>
+          <div class="tags ">
+            <span class="bold">#<%= instagram.tags.join(" #") %></span><br><%= instagram.caption.text %>
+          </div>
+          <% end %>
+        </div>
+        <div class="column_area">
+          <h1>
+            Facebook
+          </h1>
+          <% @posts.each do |post| %>
+            <div class="post_wrapper bg-twitter ">
+              <img src="<%= post["images"][0]["source"] %>">
+            </div>
+            <div class="social_media_type facebook-icon ">
+              <div class="social_media_name">
+                Rudick Concrete
+              </div>
+            </div>
+            <div class="tags ">
+              <%= post["name"] %>          
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </body>
+</html>

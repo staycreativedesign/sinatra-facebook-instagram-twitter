@@ -1,0 +1,152 @@
+html,body {
+  margin:0;
+  padding:0;
+  font-family: 'Helvetica'
+}
+
+html {
+  background-color: black;
+}
+
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+img {
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding:0;
+  }
+
+.no-padding {
+  padding:0;
+}
+
+.no-margin {
+  margin:0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+.social_media {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  padding: 0 10px;
+  margin-top: 90px;
+  overflow: hidden;
+  text-align: right;
+  z-index: 1000;
+  font-weight: bold;
+  background-color: black;
+  opacity: 0.7
+  color: white;
+}
+.social_media li {
+  padding-bottom: 5px;
+}
+.social_media img {
+  height: 110%;
+  width: 110%;
+}
+
+
+
+
+/* social media page start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.social_media_page {
+  background-color: #232323;
+  overflow: hidden;
+  color: white;
+  letter-spacing: 1px;
+  font-size:18px;
+}
+
+.social_wrapper {
+  width: 1050px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.column_area{
+  width: 320px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post_wrapper {
+  min-height: 150px;
+  margin:20px 0 -5px 0;
+  width: 100%;
+
+}
+
+.post_wrapper p {
+  padding:20px;
+  margin:0;
+}
+
+.post_wrapper img {
+  width: 100%;
+}
+
+.social_media_type {
+  background-color: white;
+  width: 100%;
+  height: 55px;
+  color:black;
+
+}
+
+.social_media_type p {
+  margin-top:20px;
+}
+
+.social_media_name {
+  text-align: left;
+  padding-top:18px;
+  padding-left:45px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+.twitter-icon,.instagram-icon, .facebook-icon {
+  background-position: fixed;
+  top:0;
+  left:0;
+}
+
+
+.tags {
+  background-color: white;
+  padding:10px 20px;
+  color:black;
+  font-size:12px;
+  font-weight: normal;
+}
+
+.bg-twitter {
+  background: black;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
